@@ -1,25 +1,20 @@
-name: Deploy
+name: Deploy Frontend Site to GitHub Pages
 
 on:
   push:
-    branches:
-      ['main','master']
-
+    branches: ["master"] # 如果你的主分支是 main，请改为 "main"
   workflow_dispatch:
 
-  # 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages。
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# 允许一个并发的部署
 concurrency:
-  group: 'pages'
-  cancel-in-progress: true
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  # 单次部署的工作描述
   deploy:
     environment:
       name: github-pages
@@ -32,28 +27,25 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 20 # 建议使用稳定的 LTS 版本，如 18 或 20
 
-      # 👇 新增：安装 pnpm
       - name: Install pnpm
         run: npm install -g pnpm
 
-      # 👇 修改：使用 pnpm 安装依赖（会自动触发 ci 模式）
       - name: Install dependencies
         run: pnpm install
 
-      # 👇 修改：使用 pnpm 执行构建
-      - name: Build
-        run: pnpm run build
+      - name: Build project
+        run: pnpm run build # 这一步会将你的源码编译成 dist 目录下的 HTML/CSS/JS
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './dist' # ⚠️注意：确保这里是你本地执行 build 后生成的文件夹名称（通常是 dist 或 build）
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v5
