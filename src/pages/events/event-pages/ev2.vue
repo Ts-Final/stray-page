@@ -128,7 +128,6 @@ const values = [
   "120 MULTIPHEX",
   "121 MVURBD",
   "122 MYSTERIOUS TRIGGER",
-  "123 N/A",
   "124 Nhelv",
   "125 Nightshade",
   "126 NONSENSE",
