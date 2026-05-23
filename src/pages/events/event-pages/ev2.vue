@@ -264,7 +264,7 @@ const values = [
   }
 })
 const the_shown = computed(() => {
-  return values.filter(x => x.name.includes(search.value))
+  return values.filter(x => x.name.toLowerCase().includes(search.value.toLowerCase()))
 })
 </script>
 
