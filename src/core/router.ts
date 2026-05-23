@@ -9,7 +9,7 @@ import EventPage from "../pages/events/event-page.vue"
 const routes = [
   {path: '/', component: StartUpView},
   {path: '/events', component: EventsList},
-  {path: '/events/:id', component: EventPage},
+  {path: '/event/:id', component: EventPage},
   {path: '/wiki', component: Wiki},
   {path: '/credits', component: Credits},
   {path: '/:pathMatch(.*)*', redirect: '/'},

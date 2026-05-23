@@ -15,7 +15,7 @@ const router = useRouter()
 </script>
 
 <template>
-  <div class="event-single" @click="router.push(`/events/${id}`)">
+  <div class="event-single" @click="router.push(`/event/${id}`)">
     <div class="event-banner"/>
     <div class="event-title">
       <slot></slot>
