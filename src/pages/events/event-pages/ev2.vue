@@ -28,7 +28,7 @@ const values = [
   "20 Angel's Window",
   "21 Angelstar",
   "22 APO11O",
-  "23 APOCALYPSE CALL",
+  "23 APOCALYPSE CALL(Theatrum Calamititus)",
   "24 Arachnid",
   "25 aria of ruinated winds",
   "26 Ascent",
@@ -180,9 +180,9 @@ const values = [
   "172 Spell Diver",
   "173 Spin Cycle (NETCAVY ReMiX)",
   "174 Star Dream -Millenium Vision-",
-  "175 STARCRASHERS",
+  "175 STARCRASHERS (new)",
   "176 stardust",
-  "177 STARGAZERS",
+  "177 STARGAZERS (new)",
   "178 Stellar Sky",
   "179 Stellaria",
   "180 Sternstunde",
@@ -256,7 +256,12 @@ const values = [
   "247 The First Memory",
   "248 Hanabi [vivid/stasis ver.]",
   "249 Carousel",
-  "250 afterglow [vivid/stasis ver.]"
+  "250 afterglow [vivid/stasis ver.]",
+
+  "251 Apocalypse Call (Kry.exe vs rN vs Ardolf)",
+  "252 STARCRASHERS (old with Ardolf)",
+  "253 (execute.)",
+  "254 STARGAZERS (old with Ardolf)"
 ].map(x => {
   return {
     id: x.split(" ")[0],
@@ -290,6 +295,13 @@ const the_shown = computed(() => {
       <span class="c-big">id列表见pastebin / 本页面下方</span>
       <span class="c-big">id-list see pastebin / below</span>
       <a-href href="https://pastebin.com/KDLiayBm">PasteBin Link</a-href>
+      <a-href href="https://docs.google.com/forms/d/e/1FAIpQLSeJGOmdkT2EHIH-f6YuxdYVV7V7PB-0nq7wbeO1DR8k83fdoQ"/>
+      <span class="c-red">
+        Special Notes: The songs by Ardolf are also included(and separated) on No.251-254.
+      </span>
+      <span>
+         I'm sorry for any offense, and if necessary, quit this page.
+      </span>
     </pre>
     <div class="contain-90 card-bg">
       <div>
@@ -304,7 +316,7 @@ const the_shown = computed(() => {
       </div>
     </div>
     <div class="main-content story-songs">
-      <div style="grid-column: span 2" class="c-big">Story Songs</div>
+      <div class="c-big" style="grid-column: span 2">Story Songs</div>
       <div>Itsuka kaerubasho</div>
       <div>EP 7 Allison's words
         <a-href href="https://soundcloud.com/kanki2/kankitsu">link</a-href>
@@ -443,10 +455,12 @@ const the_shown = computed(() => {
 .song-name {
   text-align: left;
 }
+
 .story-songs {
   display: grid;
   grid-template-columns: auto 4fr;
 }
+
 .a-href {
   text-decoration: 2px underline #7cdcf4;
   color: gold;

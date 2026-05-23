@@ -37,7 +37,7 @@ const router = useRouter()
   cursor: pointer;
   background: var(--dark-bgi);
   width: 80%;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
   box-sizing: border-box;
   text-align: left;
