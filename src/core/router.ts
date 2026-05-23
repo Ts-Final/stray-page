@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from 'vue-router'
+import {createRouter, createWebHashHistory} from 'vue-router'
 import StartUpView from "../pages/start-up/start-up.vue"
 import EventsList from "../pages/events/events-list.vue"
 import Credits from "../pages/about/credits.vue"
@@ -12,10 +12,10 @@ const routes = [
   {path: '/event/:id', component: EventPage},
   {path: '/wiki', component: Wiki},
   {path: '/credits', component: Credits},
-  {path: '/:pathMatch(.*)*', redirect: '/'},
+  {path: '/:pathMatch(.*)*', redirect: '/'}
 ]
 
 export const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes
 })
