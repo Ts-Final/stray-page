@@ -12,6 +12,12 @@ import EventBanner from "./event-banner.vue"
         Song Vote of 2025. Checkout the results!
       </template>
     </event-banner>
+    <event-banner id="2" d="23" m="5" y="2026">
+      2026 "Beyond Escape" Vote
+      <template #desc>
+        After the loose end of update, what's next?
+      </template>
+    </event-banner>
   </div>
 </template>
 
