@@ -1,0 +1,110 @@
+#app {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  width: 100vw;
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 100vh;
+}
+
+body {
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  color: #b8dcee;
+  --darker-bgi: linear-gradient(60deg, #0d1418 0%, #11161b 100%);
+  --blue-bgi: linear-gradient(220.55deg, #34495d 0%, #0e2c5e 100%);
+  --purple-bgi: linear-gradient(90deg, rgba(32, 33, 70, 1) 0%, rgba(37, 49, 50, 1) 100%);
+  --green-bgi: linear-gradient(220.55deg, #97e8b5 0%, #5cb67f 100%);
+  --gray-bgi: linear-gradient(220.55deg, #afcccb 0%, #616566 100%);
+  --dark-bgi: linear-gradient(1.83rad, #1e1e1ed6 0%, #1f1d1d 14%, #1f1d1d 80%, #171717d6 100%);
+  --grey: #3b4652;
+  --z-highest: 100;
+  --h-l-b: 80px;
+
+  --z-modal-target: 200;
+  --z-word-helper: 201; /* because the vue-modal is 200*/
+  --z-mouse-tracker: 202;
+  --z-header: 999;
+
+  --header-font-size: 1.2rem;
+  --header-line-height: 2rem;
+  --header-height: 2rem;
+
+  --button-base: #000;
+  --button-hover: #444;
+}
+
+.page-contain {
+  width: 100%;
+}
+
+* {
+  outline: none;
+  scrollbar-width: thin;
+  scrollbar-color: #b8dcee transparent;
+  color: #b8dcee;
+}
+
+a {
+  color: #b8dcee;
+}
+
+.contain-90 {
+  width: 90%;
+  justify-self: center;
+  align-self: center;
+  padding-bottom: 100px;
+  margin-top: 5vmin;
+}
+
+.h2-title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+.h3-title  {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.title {
+  text-align: center;
+}
+.subtitle {
+  opacity: 0.7;
+  margin: 0;
+}
+.card-bg {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  backdrop-filter: blur(4px);
+  padding: 1rem;
+}
+.main-content {
+  background: var(--dark-bgi);
+  border-radius: 10px;
+  padding: 2rem;
+  box-sizing: border-box;
+  white-space: pre-line;
+  text-indent: 2rem each-line;
+}
+pre {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
