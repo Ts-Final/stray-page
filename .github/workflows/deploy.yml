@@ -33,7 +33,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: 'pnpm' # 这里指定了使用 pnpm 缓存
 
       # 👇 新增：安装 pnpm
       - name: Install pnpm
