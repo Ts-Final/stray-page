@@ -294,7 +294,6 @@ const the_shown = computed(() => {
 
       <span class="c-big">id列表见pastebin / 本页面下方</span>
       <span class="c-big">id-list see pastebin / below</span>
-      <a-href href="https://pastebin.com/KDLiayBm">PasteBin Link</a-href>
       <a-href href="https://docs.google.com/forms/d/e/1FAIpQLSeJGOmdkT2EHIH-f6YuxdYVV7V7PB-0nq7wbeO1DR8k83fdoQ"/>
       <span class="c-red">
         Special Notes: The songs by Ardolf are also included(and separated) on No.251-254.
