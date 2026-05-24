@@ -128,6 +128,7 @@ const values = [
   "120 MULTIPHEX",
   "121 MVURBD",
   "122 MYSTERIOUS TRIGGER",
+  "123 The River",
   "124 Nhelv",
   "125 Nightshade",
   "126 NONSENSE",
@@ -291,8 +292,8 @@ const the_shown = computed(() => {
         class="c-red">not</span> be accepted.
       Thank you for your support!
 
-      <span class="c-big">id列表见pastebin / 本页面下方</span>
-      <span class="c-big">id-list see pastebin / below</span>
+      <span class="c-big">id列表本页面下方</span>
+      <span class="c-big">id-list: see below</span>
       <a-href href="https://docs.google.com/forms/d/e/1FAIpQLSeJGOmdkT2EHIH-f6YuxdYVV7V7PB-0nq7wbeO1DR8k83fdoQ"/>
       <span class="c-red">
         Special Notes: The songs by Ardolf are also included(and separated) on No.251-254.
@@ -300,6 +301,10 @@ const the_shown = computed(() => {
       <span>
          I'm sorry for any offense, and if necessary, quit this page.
       </span>
+      <a-href href="https://v.wjx.cn/vm/OSawNI8.aspx# ">问卷星 (China)</a-href>
+      <a-href
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeJGOmdkT2EHIH-f6YuxdYVV7V7PB-0nq7wbeO1DR8k83fdoQ/viewform?usp=dialog">Google Forms
+      </a-href>
     </pre>
     <div class="contain-90 card-bg">
       <div>
