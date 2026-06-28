@@ -6,10 +6,10 @@ import EventBanner from "../events/event-banner.vue"
 <template>
   <div class="fill">
     <div class="h2-title">Live</div>
-    <event-banner id="2" d="23" m="5" y="2026">
-      2026 "Beyond Escape" Vote
+    <event-banner id="3" d="28" m="6" y="2026">
+      2026 "Beyond Escape" Vote Result
       <template #desc>
-        After the loose end of update, what's next?
+        Check out the result of 2026 Vote!
       </template>
     </event-banner>
   </div>

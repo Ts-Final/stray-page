@@ -268,6 +268,7 @@ const values = [
     name: x.split(" ").slice(1).join(" ")
   }
 })
+console.log(values)
 const the_shown = computed(() => {
   return values.filter(x => x.name.toLowerCase().includes(search.value.toLowerCase()))
 })
