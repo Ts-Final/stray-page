@@ -1654,17 +1654,19 @@ for (let i = 0; i < data.length; i++) {
   for (let j = 1; j < 11; j += 2) {
     const song_id = parseInt(String(single[j]))
     const comment = String(single[j + 1])
-    if (song_id <= 0) continue
+    if (song_id <= 0 || isNaN(song_id)) continue
     const x = RESULT.find(a => a.id == song_id)
     if (x) {
       if (j == 1) {
         x.most += 1
         x.total += MOST
-        x.comments.push([name, comment, true])
+        // @ts-expect-error
+        if (!(comment == 0 || comment == ""))x.comments.push([name, comment, true])
       } else {
         x.normal += 1
         x.total += 1
-        x.comments.push([name, comment, false])
+        // @ts-expect-error
+        if (!(comment == 0 || comment == ""))x.comments.push([name, comment, false])
       }
     } else {
       if (j == 1) RESULT.push({
@@ -1708,8 +1710,8 @@ function set_ix(x: number) {
 </script>
 
 <template>
-  <div class="h2-title">2025 最爱曲目 投票结果</div>
-  <div class="h3-title subtitle">2025 Loved Song Vote Result</div>
+  <div class="h2-title">2026 Beyond Escape 投票结果</div>
+  <div class="h3-title subtitle">2026 Beyond Escape Vote Result</div>
   <div class="outer contain-90">
     <div class="rank-container">
       <div>
