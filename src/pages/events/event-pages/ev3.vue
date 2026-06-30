@@ -1735,9 +1735,7 @@ function set_ix(x: number) {
         </div>
         <div class="the-comments">
           <div v-for="com in the.comments">
-            <template v-if="com[1]">
-              <span :class="com[2] ? 'the-most rainbow-text-flow': ''">{{ com[0] }}</span>: {{ com[1] }}
-            </template>
+            <span :class="com[2] ? 'the-most rainbow-text-flow': ''">{{ com[0] }}</span>: {{ com[1] }}
           </div>
         </div>
       </template>
